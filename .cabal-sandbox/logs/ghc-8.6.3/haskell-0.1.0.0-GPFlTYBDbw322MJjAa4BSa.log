@@ -1,0 +1,16 @@
+cabal: Entering directory '.'
+Configuring haskell-0.1.0.0...
+Preprocessing executable 'haskell' for haskell-0.1.0.0..
+Building executable 'haskell' for haskell-0.1.0.0..
+[1 of 1] Compiling Main             ( Main.hs, dist/dist-sandbox-b7f9de9a/build/haskell/haskell-tmp/Main.o )
+Linking dist/dist-sandbox-b7f9de9a/build/haskell/haskell ...
+Preprocessing library for haskell-0.1.0.0..
+Building library for haskell-0.1.0.0..
+Preprocessing executable 'haskell' for haskell-0.1.0.0..
+Preprocessing library for haskell-0.1.0.0..
+Running Haddock on library for haskell-0.1.0.0..
+Warning: Haddocks are being requested, but there aren't any modules given to
+create documentation for.
+Installing executable haskell in /Users/chun.zheng/github/haskell/.cabal-sandbox/bin
+Installing library in /Users/chun.zheng/github/haskell/.cabal-sandbox/lib/x86_64-osx-ghc-8.6.3/haskell-0.1.0.0-GPFlTYBDbw322MJjAa4BSa
+cabal: Leaving directory '.'

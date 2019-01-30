@@ -1,0 +1,10 @@
+
+package: haskell-0.1.0.0
+os: osx
+arch: x86_64
+compiler: ghc-8.6.3
+client: cabal-install-2.4.1.0
+dependencies: base-4.12.0.0 base-4.12.0.0
+install-outcome: InstallOk
+docs-outcome: Ok
+tests-outcome: NotTried
