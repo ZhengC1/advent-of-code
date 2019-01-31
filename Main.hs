@@ -9,9 +9,9 @@ main = do
     b <- readLn
     if b > 10 then putStrLn "FooBar"
     else putStrLn "something else"
-main = getLine >>=
-    \a -> readLn >>=
-        \b -> if b > 10 then putStrLn "FooBar" else putStrLn "something else"
+-- main = getLine >>=
+--     \a -> readLn >>=
+--         \b -> if b > 10 then putStrLn "FooBar" else putStrLn "something else"
 
 foo :: Integer -> Integer -> String
 foo 1 b = show (1 - b)
@@ -67,22 +67,14 @@ instance Functor SinglyLinkedList where
 -- LL 1 (LL 2 (LL 3 (LL 4 Empty)))
 --appendToList arg LinkedList list = LinkedList arg(list)
 
-
-
-
-
 -- type classes are kinda like interfaces
 instance Functor Optional where
     fmap = applyToOptional
-
-
-
 
 instance Applicative Optional where
     pure a = Chun a
     ChunNothing <*> b = ChunNothing
     (Chun f) <*> b = fmap f b
-
 
 instance Monad Optional where
     ChunNothing >>= f = ChunNothing
@@ -94,10 +86,9 @@ myDivide a b = Chun (a / b)
 
 mfunc :: Double -> Optional Double
 mfunc a = myDivide 12 a >>= \a' -> myDivide 3 a'
-mfunc a = do
-    a' <- myDivide 12 a
-    myDivide 3 a'
-
+-- mfunc a = do
+--     a' <- myDivide 12 a
+--     myDivide 3 a'
 
 
 
